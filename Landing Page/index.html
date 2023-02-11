@@ -167,8 +167,9 @@
     <script src="assets/js/slick-slider.js"></script>
     <script src="assets/js/custom.js"></script>
     <script>
-      const element = document.getElementById("my-element"); 
-element.addEventListener("contextmenu", (event) => { // do something when the context menu is shown });
+      document.addEventListener("contextmenu", (event) => {
+         event.preventDefault();
+      });
         //according to loftblog tut
         $('.nav li:first').addClass('active');
 
